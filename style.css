@@ -1,84 +1,107 @@
 body {
     font-family: 'Press Start 2P', cursive;
-    background: linear-gradient(135deg, #5dc27d, #87e0a8);
+    background: repeating-linear-gradient(
+        45deg,
+        #5dc27d,
+        #5dc27d 10px,
+        #87e0a8 10px,
+        #87e0a8 20px
+    );
     margin: 0;
     padding: 0;
     text-align: center;
+    color: #000;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
 
 h1 {
     background: #fff;
-    padding: 15px;
-    border: 4px solid #000;
-    box-shadow: 4px 4px #000;
-    margin-bottom: 20px;
+    padding: 20px;
+    border: 6px solid #000;
+    box-shadow: 6px 6px 0px #000;
+    margin-bottom: 25px;
+    text-transform: uppercase;
 }
 
 .balance-box {
-    background: #99cc66;
-    padding: 15px;
-    border: 4px solid #000;
-    box-shadow: 4px 4px #000;
+    background: #a5d672;
+    padding: 20px;
+    border: 6px solid #000;
+    box-shadow: 6px 6px 0px #000;
+}
+
+.balance-box p {
+    font-size: 14px;
 }
 
 .summary {
     display: flex;
     justify-content: space-around;
-    margin: 20px 0;
+    margin: 25px 0;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .summary div {
     flex: 1 1 40%;
-    margin: 10px;
     padding: 15px;
-    border: 4px solid #000;
-    box-shadow: 4px 4px #000;
+    border: 5px solid #000;
+    box-shadow: 5px 5px 0px #000;
+    text-align: center;
 }
 
 .income {
     background: #d4f8d4;
-    color: green;
+    color: #0a7a0a;
 }
 
 .expenses {
     background: #f8d4d4;
-    color: red;
+    color: #a30000;
 }
 
 .transactions-section {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: nowrap;
+    gap: 25px;
 }
 
 .transactions, .add-transaction {
     flex: 1 1 45%;
     background: #fff;
     padding: 15px;
-    border: 4px solid #000;
-    box-shadow: 4px 4px #000;
+    border: 5px solid #000;
+    box-shadow: 5px 5px 0px #000;
+}
+
+.transactions h2,
+.add-transaction h2 {
+    background: #eee;
+    padding: 8px;
+    border-bottom: 3px solid #000;
+    margin-bottom: 15px;
 }
 
 .transactions ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .transactions li {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 5px;
+    margin-bottom: 12px;
+    padding: 8px;
     border: 3px solid #000;
-    box-shadow: 2px 2px #000;
+    box-shadow: 3px 3px 0px #000;
+    font-size: 12px;
 }
 
 .income-item {
@@ -89,22 +112,30 @@ h1 {
     background: #f8d4d4;
 }
 
-.add-transaction input, .add-transaction button {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
+.add-transaction input,
+.add-transaction button {
+    width: 90%;
+    padding: 10px;
+    margin: 6px 0;
     border: 3px solid #000;
     font-family: 'Press Start 2P', cursive;
-    box-shadow: 2px 2px #000;
+    font-size: 12px;
+    box-shadow: 3px 3px 0px #000;
+    background: #fff;
 }
 
 .add-transaction button {
-    background: #99cc66;
+    background: #a5d672;
     cursor: pointer;
 }
 
 .add-transaction button:hover {
-    background: #88b85a;
+    background: #8fc15e;
+}
+
+/* Pixel "borda dupla" para reforçar estilo retro */
+* {
+    image-rendering: pixelated;
 }
 
 /* Responsividade */

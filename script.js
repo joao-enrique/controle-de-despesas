@@ -39,10 +39,11 @@ function addTransaction(e) {
     e.preventDefault();
 
     const text = descInput.value.trim();
-    const amount = +amountInput.value.trim();
+    const amountStr = amountInput.value.trim().replace(",", "."); // troca vírgula por ponto
+    const amount = parseFloat(amountStr);
 
     if (text === "" || isNaN(amount)) {
-        alert("Preencha todos os campos!");
+        alert("Preencha todos os campos com valores válidos!");
         return;
     }
 

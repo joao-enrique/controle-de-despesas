@@ -114,7 +114,7 @@ h1 {
 
 .add-transaction input,
 .add-transaction button {
-    width: 90%;
+    width: 80%;
     padding: 10px;
     margin: 6px 0;
     border: 3px solid #000;
@@ -125,12 +125,19 @@ h1 {
 }
 
 .add-transaction button {
+    width: 85%;
     background: #a5d672;
     cursor: pointer;
 }
 
 .add-transaction button:hover {
     background: #8fc15e;
+}
+
+.info-text {
+    font-size: 10px;
+    color: #555;
+    margin-top: 20px;
 }
 
 /* Pixel "borda dupla" para reforçar estilo retro */
@@ -141,7 +148,6 @@ h1 {
 /* Responsividade */
 @media (max-width: 768px) {
     .summary {
-        flex-direction: column;
         align-items: center;
     }
     .transactions-section {

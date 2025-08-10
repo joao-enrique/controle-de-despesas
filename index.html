@@ -9,40 +9,41 @@
 </head>
 <body>
     <div class="container">
-        <h1>Expense Tracker</h1>
+        <h1>Controle de despesas</h1>
         
         <div class="balance-box">
-            <p>Your Balance</p>
-            <h2 id="balance">$2,450.00</h2>
+            <p>BALANÇA</p>
+            <h2 id="balance">$0.00</h2>
         </div>
 
         <div class="summary">
             <div class="income">
-                <p>Income</p>
-                <h3 id="income">$4,700.00</h3>
+                <p>ENTRADAS</p>
+                <h3 id="income">$0.00</h3>
             </div>
             <div class="expenses">
-                <p>Expenses</p>
-                <h3 id="expenses">$2,250.00</h3>
+                <p>DESPESAS</p>
+                <h3 id="expenses">$0.00</h3>
             </div>
         </div>
 
         <div class="transactions-section">
             <div class="transactions">
-                <h2>Transactions</h2>
-                <ul id="transaction-list">
-                    <li class="income-item">Paycheck 3 <span>$1200.00</span></li>
-                    <li class="expense-item">iPhone <span>-$500.00</span></li>
-                    <li class="expense-item">Macbook <span>-$1500.00</span></li>
-                </ul>
+                <h2>TRANSAÇÕES</h2>
+                <ul id="transaction-list"></ul>
             </div>
             <div class="add-transaction">
-                <h2>Add Transaction</h2>
-                <input type="text" placeholder="Enter description...">
-                <input type="number" placeholder="Enter amount...">
-                <button>Add</button>
+                <h2>ADICIONAR TRANSIÇÕES</h2>
+                <form id="transaction-form">
+                    <input type="text" id="desc" placeholder="Enter description...">
+                    <input type="number" id="amount" placeholder="Enter amount...">
+                    <h3 class="info-text">[-]Use valores negativos para despesas</h3>
+                    <button type="submit">Add</button>
+                </form>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

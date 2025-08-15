@@ -55,7 +55,7 @@ Todos os dados são salvos no **localStorage**, garantindo que permaneçam mesmo
 
 ```bash
 
-https://github.com/joao-enrique/Pixel-Expense-Tracker.git
+https://github.com/joao-enrique/controle-de-despesas.git
 
 ```
 
